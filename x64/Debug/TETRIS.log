@@ -1,0 +1,21 @@
+﻿  EnumFile.cpp
+  Funtion.cpp
+  Main.cpp
+  Parameter.cpp
+  코드를 생성하고 있습니다...
+Main.obj : error LNK2005: "void __cdecl ChangeColor(enum Color)" (?ChangeColor@@YAXW4Color@@@Z)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "void __cdecl HideCursor(void)" (?HideCursor@@YAXXZ)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "void __cdecl IntroInit(void)" (?IntroInit@@YAXXZ)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "void __cdecl IntroUpdate(void)" (?IntroUpdate@@YAXXZ)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "void __cdecl LogoInit(void)" (?LogoInit@@YAXXZ)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "void __cdecl SetPosition(int,int)" (?SetPosition@@YAXHH@Z)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "void __cdecl Update(void)" (?Update@@YAXXZ)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "int highScore" (?highScore@@3HA)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "int score" (?score@@3HA)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "int combo" (?combo@@3HA)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Main.obj : error LNK2005: "char const * * logoText" (?logoText@@3PAPEBDA)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Parameter.obj : error LNK2005: "int highScore" (?highScore@@3HA)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Parameter.obj : error LNK2005: "int score" (?score@@3HA)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Parameter.obj : error LNK2005: "int combo" (?combo@@3HA)이(가) Funtion.obj에 이미 정의되어 있습니다.
+Parameter.obj : error LNK2005: "char const * * logoText" (?logoText@@3PAPEBDA)이(가) Funtion.obj에 이미 정의되어 있습니다.
+C:\Users\PC\Desktop\수업\TETRIS\x64\Debug\TETRIS.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
