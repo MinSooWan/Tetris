@@ -1,7 +1,11 @@
-#include <stdio.h>
+#pragma once
 #include <Windows.h>
-#include "EnumFile.cpp"
-#include "Parameter.cpp"
+#include "EnumFile.h"
+
+int highScore;
+int score;
+int combo;
+const char* logoText[26];
 
 #pragma region WINAPI
 void HideCursor();
@@ -15,7 +19,6 @@ void LogoInit();
 void IntroInit();
 void IntroUpdate();
 
-//-------------------------------------------------------------------------------------------
 #pragma region WINAPI
 void HideCursor()
 {
@@ -77,6 +80,10 @@ void LogoInit()
 void IntroInit()
 {
 	LogoInit();
+	for (int i = 0; i < 26; i++)
+	{
+		printf(logoText[i]);
+	}
 	SetPosition(10, 10);
 }
 

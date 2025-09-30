@@ -1,4 +1,5 @@
-#include "Funtion.cpp"
+#include <stdio.h>
+#include "Funtion.h"
 
 int main()
 {

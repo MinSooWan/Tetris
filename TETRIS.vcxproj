@@ -123,10 +123,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EnumFile.cpp" />
-    <ClCompile Include="Funtion.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Parameter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EnumFile.h" />
+    <ClInclude Include="Funtion.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
