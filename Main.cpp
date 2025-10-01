@@ -6,6 +6,7 @@ int main()
 	Init();
 	while (true)
 	{
+		system("cls");
 		Update();
 		Sleep(50);
 	}

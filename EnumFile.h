@@ -24,6 +24,11 @@ enum SCENE_ID
 	INTRO,
 	STAGE,
 	MENU,
-	OPTION,
 	EXIT
+};
+
+enum MENU_ID
+{
+	CONTINUE,
+	
 };

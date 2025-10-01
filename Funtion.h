@@ -7,7 +7,20 @@
 #define MAP_HEIGHT 50
 #define MAP_WIDTH 20
 #pragma endregion
+#pragma region STRUCT
+struct Obj
+{
+	int x;
+	int y;
+	const char* shape;
+	Color color;
+};
 
+struct Block : Obj
+{
+
+};
+#pragma endregion
 #pragma region PARAMETER
 int highScore;
 int score;
@@ -67,6 +80,7 @@ int map[MAP_HEIGHT][MAP_WIDTH] =
 	{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
 	{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }
 };
+Obj* arrow;
 #pragma endregion
 
 #pragma region WINAPI
@@ -86,6 +100,12 @@ void StageInit();
 void StageUpdate();
 void StageProgress();
 void StageRender();
+
+void MenuInit();
+void MenuUpdate();
+
+void ExitInit();
+void ExitUpdate();
 
 #pragma region WINAPI
 void HideCursor()
@@ -132,10 +152,10 @@ void Update()
 		StageUpdate();
 		break;
 	case MENU:
-		break;
-	case OPTION:
+		MenuUpdate();
 		break;
 	case EXIT:
+		ExitUpdate();
 		break;
 	default:
 		break;
@@ -208,6 +228,33 @@ void StageUpdate()
 
 void StageProgress()
 {
+	//ESC
+	if (GetAsyncKeyState(VK_ESCAPE))
+	{
+		MenuInit();
+	}
+
+	//πÊ«‚≈∞
+	if (GetAsyncKeyState(VK_UP))
+	{
+
+	}
+	if (GetAsyncKeyState(VK_DOWN))
+	{
+
+	}
+	if (GetAsyncKeyState(VK_LEFT))
+	{
+
+	}
+	if (GetAsyncKeyState(VK_RIGHT))
+	{
+
+	}
+	if (GetAsyncKeyState(VK_SPACE))
+	{
+
+	}
 }
 
 void StageRender()
@@ -230,4 +277,24 @@ void StageRender()
 			}
 		}
 	}
+}
+
+void MenuInit()
+{
+	scene = MENU;
+	arrow = (Obj*)malloc(sizeof(Obj));
+
+}
+
+void MenuUpdate()
+{
+
+}
+
+void ExitInit()
+{
+}
+
+void ExitUpdate()
+{
 }
